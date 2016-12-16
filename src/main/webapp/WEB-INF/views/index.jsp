@@ -14,7 +14,7 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" href="/WEB-INF/assets/css/hellotag.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/hellotag.css" type="text/css" />
 </head>
 <body>
 
@@ -45,10 +45,9 @@
         </tr>
     </ht:iterator>
 
-    <img src="/WEB-INF/assets/Wechat.jpeg" alt="AAAAAAA"/>
+    <img src="/assets/img/Wechat.jpeg" alt="AAAAAAA"/>
 
-    <%--<cu:Hello/>--%>
-    <%--<c:redirect url="/list" ></c:redirect>--%>
+    <c:redirect url="/list" />
 
 </body>
 </html>
