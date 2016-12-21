@@ -11,15 +11,15 @@ import java.util.List;
  * Created by yuume on 16/12/20.
  */
 
-@Repository("C010Dao")
-public class C010DaoImpl extends AbstractDao<Integer, Card> implements C010Dao {
+@Repository("CardDao")
+public class CardDaoImpl extends AbstractDao<Integer, Card> implements CardDao {
 
     public Card findById(int id){
         return getByKey(id);
     }
 
     @SuppressWarnings("unchecked")
-    public List<Card> findAllC010() {
+    public List<Card> findAllCard() {
         Criteria criteria = createEntityCriteria();
         return (List<Card>) criteria.list();
     }

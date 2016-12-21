@@ -4,15 +4,11 @@ package com.lacemile.tags.cardtag;
  * Created by yuume on 16/12/20.
  */
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 import java.io.IOException;
 import java.io.Writer;
 
-@Entity
-@Table(name="card")
 //只有一个图片与超链的卡片 自定义标签 实现类
 public class C010 extends SimpleTagSupport
 {

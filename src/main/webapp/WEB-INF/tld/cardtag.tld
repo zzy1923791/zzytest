@@ -19,6 +19,12 @@
         <tag-class>com.lacemile.tags.cardtag.C010</tag-class>
         <!-- 定义标签体为空 -->
         <body-content>empty</body-content>
+        <!-- 配置标签属性:id -->
+        <attribute>
+            <name>id</name>
+            <required>true</required>
+            <fragment>true</fragment>
+        </attribute>
         <!-- 配置标签属性:url -->
         <attribute>
             <name>urlImage</name>

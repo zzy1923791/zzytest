@@ -1,7 +1,9 @@
 package com.lacemile.controller;
 
+import com.lacemile.model.Card;
 import com.lacemile.model.Employee;
 import com.lacemile.service.EmployeeService;
+import com.lacemile.service.tags.cardtag.CardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
@@ -21,6 +23,9 @@ import java.util.Locale;
 public class AppController {
 
     @Autowired
+    CardService cardService;
+
+    @Autowired
     EmployeeService service;
 
     @Autowired
@@ -38,7 +43,11 @@ public class AppController {
      * 这种方法将列出所有测试用的"卡片"。
      */
     @RequestMapping(value = { "/card" }, method = RequestMethod.GET)
-    public String cardtest() {
+    public String listCard(ModelMap model) {
+
+        //注入
+        List<Card> cards = cardService.findAllCard();
+        model.addAttribute("cards", cards);
 
         return "cardtest";
     }

@@ -1,6 +1,6 @@
 package com.lacemile.service.tags.cardtag;
 
-import com.lacemile.dao.tags.cardtag.C010Dao;
+import com.lacemile.dao.tags.cardtag.CardDao;
 import com.lacemile.model.Card;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,19 +11,19 @@ import java.util.List;
 /**
  * Created by yuume on 16/12/20.
  */
-@Service("CardtagService")
+@Service("cardService")
 @Transactional
-public class C010ServiceImpl implements C010Service {
+public class CardServiceImpl implements CardService {
 
     @Autowired
-    private C010Dao dao;
+    private CardDao dao;
 
     public Card findById(int id){
         return dao.findById(id);
     }
 
-    public List<Card> findAllC010(){
-        return dao.findAllC010();
+    public List<Card> findAllCard(){
+        return dao.findAllCard();
     }
 
 //    public List<Employee> findAllEmployees() {

@@ -6,10 +6,10 @@ import java.util.List;
 /**
  * Created by yuume on 16/12/20.
  */
-public interface C010Dao {
+public interface CardDao {
 
     Card findById(int id);
-    List<Card> findAllC010();
+    List<Card> findAllCard();
 
 }
 
