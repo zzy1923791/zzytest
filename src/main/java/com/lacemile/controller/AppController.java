@@ -35,6 +35,16 @@ public class AppController {
 
 
     /*
+     * 这种方法将列出所有测试用的"卡片"。
+     */
+    @RequestMapping(value = { "/card" }, method = RequestMethod.GET)
+    public String cardtest() {
+
+        return "cardtest";
+    }
+
+
+    /*
      * This method will list all existing employees.
      * 这种方法将列出所有现有的员工。
      */

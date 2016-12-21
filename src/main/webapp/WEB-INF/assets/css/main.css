@@ -1,0 +1,32 @@
+/*通用页面CSS*/
+body{
+    width: 375px;
+    margin: 0 0 0 0px;
+    background-color: red;
+}
+
+/*视窗查询*/
+/*视窗查询:Iphone 6 */
+@media screen and (min-width: 350px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: #3037ee;
+    }
+}
+
+/*卡片设置*/
+.card{
+    background-color: white;
+}
+.card_content{
+    height: 222px;
+}
+.card_space{
+    height: 10px;
+}
+

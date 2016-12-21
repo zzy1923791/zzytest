@@ -47,7 +47,9 @@
 
     <img src="/assets/img/Wechat.jpeg" alt="AAAAAAA"/>
 
-    <c:redirect url="/list" />
+    <%--<c:redirect url="/list" />--%>
+
+    <c:redirect url="/card" />
 
 </body>
 </html>

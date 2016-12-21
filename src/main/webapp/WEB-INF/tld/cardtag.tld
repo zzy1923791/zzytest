@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>CardTag</short-name>
+    <!--定义标签库的URI-->
+    <uri>http://www.lacemile.com/tags/cardtag</uri>
+
+    <!-- 标签:card_010 -->
+    <!-- 属性:urlImage -->
+    <tag>
+        <!-- 定义标签名 -->
+        <name>C010</name>
+        <!-- 定义标签处理类 -->
+        <tag-class>com.lacemile.tags.cardtag.C010</tag-class>
+        <!-- 定义标签体为空 -->
+        <body-content>empty</body-content>
+        <!-- 配置标签属性:url -->
+        <attribute>
+            <name>urlImage</name>
+            <required>true</required>
+            <fragment>true</fragment>
+        </attribute>
+    </tag>
+
+    <!-- Invoke 'Generate' action to add tags or functions -->
+
+</taglib>

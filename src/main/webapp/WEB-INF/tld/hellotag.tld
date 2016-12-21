@@ -16,7 +16,7 @@
         <!--定义标签名-->
         <name>Hello</name>
         <!--定义标签处理类-->
-        <tag-class>com.lacemile.tags.HelloTag</tag-class>
+        <tag-class>com.lacemile.tags.hellotag.HelloTag</tag-class>
         <!--定义标签体为空-->
         <body-content>empty</body-content>
     </tag>
@@ -26,7 +26,7 @@
         <!-- 定义标签名 -->
         <name>query</name>
         <!-- 定义标签处理类 -->
-        <tag-class>com.lacemile.tags.QueryTag</tag-class>
+        <tag-class>com.lacemile.tags.hellotag.QueryTag</tag-class>
         <!-- 定义标签体为空 -->
         <body-content>empty</body-content>
         <!-- 配置标签属性:driver -->
@@ -66,7 +66,7 @@
         <!-- 定义标签名 -->
         <name>iterator</name>
         <!-- 定义标签处理类 -->
-        <tag-class>com.lacemile.tags.IteratorTag</tag-class>
+        <tag-class>com.lacemile.tags.hellotag.IteratorTag</tag-class>
         <!-- 定义标签体支持JSP脚本 -->
         <body-content>scriptless</body-content>
         <!-- 配置标签属性:collection -->
